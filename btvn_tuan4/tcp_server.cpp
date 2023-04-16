@@ -78,7 +78,7 @@ int main(int argc, char *argv[]) {
             }
             printf("Message from client: %s\n", buffer);
             fprintf(out_file, "%s\n", buffer);
-            *buffer = "";
+            // *buffer = "";
         }
 
         fclose(out_file);

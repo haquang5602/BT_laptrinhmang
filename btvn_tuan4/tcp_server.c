@@ -19,6 +19,7 @@ int main(int argc, char *argv[]) {
 
     // create a socket
     if ((server_sock = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+        printf("%d", server_sock);
         printf("Socket creation error\n");
         return -1;
     }
